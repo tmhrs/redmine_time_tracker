@@ -21,7 +21,7 @@ class TimeTracker < ActiveRecord::Base
         self.time_spent = 0.0
         self.paused = false
     end
-   
+
     def hours_spent
         running_time + time_spent
     end
